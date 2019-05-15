@@ -1,4 +1,4 @@
-const siteContent = {
+const siteContent =  {
   "nav": {
     "nav-item-1": "Services",
     "nav-item-2": "Product",
@@ -40,3 +40,37 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Selectors
+let navA = document.querySelectorAll('a');
+let topHeader = document.querySelector('h1');
+let topButton = document.querySelector('button');
+let topImg = document.getElementById('cta-img');
+let H4 =document.querySelectorAll('h4');
+let paragraphs = document.querySelectorAll('p');
+let middleImg = document.getElementById('middle-img');
+
+let counter = 1;
+navA.forEach(function(element) {
+  element.textContent = siteContent['nav'][`nav-item-${counter}`]
+  counter++;
+});
+
+topHeader.textContent = siteContent['cta']['h1'];
+
+topButton.textContent = siteContent['cta']['button'];
+topImg.setAttribute('src', siteContent['cta']['img-src']);
+
+H4[0].textContent = siteContent['main-content']['features-h4'];
+H4[1].textContent = siteContent['main-content']['about-h4'];
+H4[2].textContent = siteContent['main-content']['services-h4'];
+H4[3].textContent = siteContent['main-content']['product-h4'];
+H4[4].textContent = siteContent['main-content']['vision-h4'];
+
+paragraphs[0].textContent = siteContent['main-content']['features-content'];
+paragraphs[1].textContent = siteContent['main-content']['about-content'];
+paragraphs[2].textContent = siteContent['main-content']['services-content'];
+paragraphs[3].textContent = siteContent['main-content']['product-content'];
+paragraphs[4].textContent = siteContent['main-content']['vision-content'];
+
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
