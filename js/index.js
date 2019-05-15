@@ -74,3 +74,9 @@ paragraphs[3].textContent = siteContent['main-content']['product-content'];
 paragraphs[4].textContent = siteContent['main-content']['vision-content'];
 
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+H4[5].textContent = siteContent['contact']['contact-h4'];
+paragraphs[5].textContent = siteContent['contact']['address'];
+paragraphs[6].textContent = siteContent['contact']['phone'];
+paragraphs[7].textContent = siteContent['contact']['email'];
+paragraphs[8].textContent = siteContent['footer']['copyright'];
