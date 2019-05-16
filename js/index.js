@@ -58,6 +58,7 @@ navA.forEach(function(element) {
 
 topHeader.textContent = siteContent['cta']['h1'];
 
+
 topButton.textContent = siteContent['cta']['button'];
 topImg.setAttribute('src', siteContent['cta']['img-src']);
 
@@ -80,3 +81,26 @@ paragraphs[5].textContent = siteContent['contact']['address'];
 paragraphs[6].textContent = siteContent['contact']['phone'];
 paragraphs[7].textContent = siteContent['contact']['email'];
 paragraphs[8].textContent = siteContent['footer']['copyright'];
+
+let nav = document.querySelectorAll('a');
+nav.forEach(function(element){
+  element.style.color = 'lightgreen';
+})
+
+const navElement = document.querySelector('nav');
+
+const newElement1 = document.createElement('a');
+const newElement2 = document.createElement('a');
+
+navElement.appendChild(newElement1);
+navElement.prepend(newElement2);
+
+newElement1.innerText = 'Portfolio';
+newElement2.innerText = 'Favorite';
+
+newElement1.style.color = 'lightgreen';
+newElement2.style.color = 'lightgreen';
+
+
+document.querySelector('h1').style.color = 'lightgreen';
+document.querySelector('h4').style.color = 'lightgreen';
