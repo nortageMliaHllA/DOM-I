@@ -105,3 +105,9 @@ newElement2.style.color = 'lightgreen';
 document.querySelector('h1').style.color = 'lightgreen';
 document.querySelector('.container').style.color = 'lightgreen';
 
+const button = document.querySelector('button')
+button.addEventListener('click', function(event){
+  alert('You are entering the DOM!!')
+})
+
+console.log(button)
