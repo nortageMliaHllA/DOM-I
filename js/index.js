@@ -46,7 +46,7 @@ let navA = document.querySelectorAll('a');
 let topHeader = document.querySelector('h1');
 let topButton = document.querySelector('button');
 let topImg = document.getElementById('cta-img');
-let H4 =document.querySelectorAll('h4');
+let H4 = document.querySelectorAll('h4');
 let paragraphs = document.querySelectorAll('p');
 let middleImg = document.getElementById('middle-img');
 
@@ -103,4 +103,4 @@ newElement2.style.color = 'lightgreen';
 
 
 document.querySelector('h1').style.color = 'lightgreen';
-document.querySelector('h4').style.color = 'lightgreen';
+document.querySelector('.container').style.color = 'lightgreen';
