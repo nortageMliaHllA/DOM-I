@@ -104,3 +104,4 @@ newElement2.style.color = 'lightgreen';
 
 document.querySelector('h1').style.color = 'lightgreen';
 document.querySelector('.container').style.color = 'lightgreen';
+
